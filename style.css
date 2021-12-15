@@ -8,6 +8,11 @@ h1{color:grey;font-family:verdana;text-align:center;}
     border-radius:25px;
     margin: auto;
 }
+
+.input_values{
+    margin: 40px;
+}
+
 footer{
     position: fixed;
     width: 100%;
