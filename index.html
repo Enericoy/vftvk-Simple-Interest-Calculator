@@ -2,19 +2,24 @@
 <html lang = "en">
     <head>
         <meta charset="UTF-8">
+        <!--Javascript-->
         <script src="script.js"></script>
+        <!--CSS Sheet-->
         <link rel="stylesheet" href="style.css">
-        <title> Simple Interest Calculator </title>
+        <title> Simple Interest Calculator </title> <!--Tab Title-->
     </head>
     <body>
         <div class="maindiv">
-            <h1>Simple Interest Calculator</h1>
-            Amount <input type="number"  id="principal">  <br/><br/>
-            <label for="interest">Interest Rate:</label>
+            <h1>Simple Interest Calculator</h1> <!--Page Heading-->
+            <!--Amount-->
+            Amount :<input type="number"  id="principal" onchange="return check_principal()">  <br/><br/>
+            <!--Interest Rate-->
+            <label for="interest">Interest Rate :</label>
             <input type="range" id="interest" name="rate" onchange="updateRate()" min="1" max="20" step="0.25" value="10.25">
             <span id="rate_val">
                 10.25%
             </span><br/><br/>
+            <!--Number of years-->
             <label for="years">No. of Years :</label>
                 <select name="years" id="years">
                     <option value="1">1</option>
